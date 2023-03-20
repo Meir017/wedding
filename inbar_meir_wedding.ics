@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:ענבר ומאיר מתחתנים\nDate and Time - Jun 25\, 2023 6:30 PM to 11:55 PM\nVenue - המערה בית גוברין\nהמערה בית גוברין\n\nUse Waze to drive to המערה - גן אירועים: https://waze.com/ul/hsv8gf4djh3\n\n
+DTSTART:20230625T163000Z
+DTEND:20230625T215500Z
+LOCATION:המערה בית גוברין
+SUMMARY;LANGUAGE=en-us:ענבר ומאיר מתחתנים
+END:VEVENT
+END:VCALENDAR
