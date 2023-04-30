@@ -46,14 +46,15 @@
 
 <body dir="rtl">
     <div class="container-fluid">
-    <!--
-        <video controls style="display: block; margin-left: auto; margin-right: auto; width: 50%;" autoplay="true">
-            <source src="images/inbar-meir-invite-video.mp4" type="video/mp4">
-        </video>
-    -->
+	    <center>
+		    
+	    </center>
         <img id="wedding-invite" src="images/1.png" class="mx-auto rounded d-block" style="max-height: 70vh ; max-width: 100%; min-height: 10vh; min-width: 10vh;" alt="Invite">
         <br />
         <center>
+            <div class="col-sm-12 col-lg-4 text-center p-1">
+                <a id="reserve-button" href="#wedding-form" class="btn btn-light">לאישור הגעה 📝</a>
+            </div>
             <center>
                 <div class="switch">
                     <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -73,6 +74,9 @@
             <div class="col-sm-12 col-lg-4 text-center p-1">
                 <a id="navigate-using-waze" href="https://waze.com/ul/hsv8gf4djh3" class="btn btn-light">📌 לניווט באמצעות Waze</a>
             </div>
+		
+      <iframe id="wedding-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfCMHc34Ki0Otr8iKiA4cinVxm1zI_wAt_M71sXHvPh8rhkBg/viewform?embedded=true" width="376" height="780" frameborder="0" marginheight="0" marginwidth="0">…</iframe>
+		
         </center>
         <br />
     </div>
@@ -87,6 +91,7 @@
             const saveEventInOtherCalender = document.querySelector('#save-event-in-other-calender');
             const saveEventInGoogleCalender = document.querySelector('#save-event-in-google-calender');
             const navigateUsingWaze = document.querySelector('#navigate-using-waze');
+	    const reserveButton = document.querySelector('#reserve-button');
 
             if (event.target.checked) {
                 // English
@@ -94,12 +99,14 @@
                 saveEventInOtherCalender.textContent = '📅 Save event in other calendar';
                 saveEventInGoogleCalender.textContent = '🗓️ Save event in Google Calendar';
                 navigateUsingWaze.textContent = '📌 Navigate using Waze';
+		reserveButton.textContent = 'Arrival confirmation 📝';
             } else {
                 // Hebrew
                 weddingInvite.setAttribute('src', 'images/1.png');
                 saveEventInOtherCalender.textContent = '📅 לשמירת האירוע ביומן אחר';
                 saveEventInGoogleCalender.textContent = '🗓️ לשמירת האירוע ב Google Calendar';
                 navigateUsingWaze.textContent = '📌 לניווט באמצעות Waze';
+		reserveButton.textContent = 'לאישור הגעה 📝';
             }
         });
     </script>
